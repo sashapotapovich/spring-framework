@@ -4,6 +4,7 @@ apply plugin: "groovy"
 
 dependencies {
 	compile(project(":spring-core"))
+	compile 'net.bytebuddy:byte-buddy:1.7.1'
 	optional("javax.inject:javax.inject:1")
 	optional("org.yaml:snakeyaml:1.24")
 	optional("org.codehaus.groovy:groovy-xml:${groovyVersion}")

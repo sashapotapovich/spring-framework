@@ -310,7 +310,8 @@ class CglibAopProxy implements AopProxy, Serializable {
 				aopInterceptor,  // for normal advice
 				targetInterceptor,  // invoke target without considering advice, if optimized
 				new SerializableNoOp(),  // no override for methods mapped to this
-				targetDispatcher, this.advisedDispatcher,
+				targetDispatcher,
+				this.advisedDispatcher,
 				new EqualsInterceptor(this.advised),
 				new HashCodeInterceptor(this.advised)
 		};
